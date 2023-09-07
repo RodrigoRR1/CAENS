@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservas de Itens</title>
+        <link rel="stylesheet" href="style-historicoRegistroItem.css">
+    </head>
+
+    <body>
+        <div id="detalhe"></div>
+
+        <header>
+            <img id="logo" src="imagens/logo.png" alt="Logo  SGI">       
+            <div id="alterarMenu" onclick="alterarMenu()">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+            <nav id="menu">
+                <ul id="listaMenu">
+                    <li><a href="#">Solicitar Item</a></li>
+                    <li><a href="#">Retirar Item</a></li>
+                    <li><a href="#">Devolver Item</a></li>
+                    <li><a href="#">Visualizar Itens</a></li>
+                    <li><a href="#">Cadastrar Item</a></li>
+                    <li><a href="#">Cadastrar Professor</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="titulo">
+            <h1>RESERVAS DE ITEM</h1>
+        </div>
+
+        <div class="tabelaContainer">
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>PROFESSOR</th>
+                        <th>SIAP</th>
+                        <th>ITEM</th>
+                        <th>TIPO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As linhas da tabela estão vazias -->
+                </tbody>
+            </table>
+        </div>
+
+        <script>
+            function alterarMenu() {
+                const menu = document.getElementById("menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+    </body>
+
+</html>

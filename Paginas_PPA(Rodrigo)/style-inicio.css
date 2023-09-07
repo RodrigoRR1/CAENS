@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("imagens/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: transparent;
+    padding: 3.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#logo {
+    max-width: 25vh;
+    height: auto;
+}
+
+nav a {
+    font-size: 2.7vh;
+    margin-left: 6.7vh;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.6vh 1.7vh;
+}
+
+nav a:hover {
+    color: #A6FBAE;
+    font-size: 2.9vh;
+}
+
+#detalhe1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 90vw;
+    height: 110vh;
+    background-image: url("imagens/inicial/detalhe1.png");
+    background-size: cover;
+    z-index: -1;
+}
+
+#detalhe2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    background-image: url("imagens/inicial/detalhe2.png");
+    background-size: cover;
+    z-index: -1;
+}
+
+#conteudo {
+    position: absolute;
+    top: 45%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+}
+
+#titulo {
+    font-size: 15.36vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 0.5vh #A6FBAE;
+    background-clip: text;
+    letter-spacing: 1.3vh;
+}
+
+#subTitulo {
+    margin-top: -13vh;
+    font-size: 7vh;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 1.5vh;
+    margin-bottom: 9vh;
+}
+
+#botao {
+    font-size: 7vh;
+    background-color: #7BDC73;
+    color: #ffffff;
+    padding: 2vh 9vh;
+    border: none;
+    border-radius: 11.7vh;
+    cursor: pointer;
+    text-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 2);
+    margin-bottom: 9vh;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1.5vh 1vh rgba(0, 0, 0, 0.3);
+}
+
+#botao:hover {
+    background-color: #9BE49E;
+}
+
+p {
+    margin-top: -2vh;
+    font-size: 2.5vh;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
