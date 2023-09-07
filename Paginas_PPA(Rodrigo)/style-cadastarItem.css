@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("imagens/fundo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+#detalhe {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-image: url("imagens/cadItem/detalhe.png");
+  background-size: cover;
+  z-index: -1;
+}
+
+header {
+  background-color: #343A50;
+  padding: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.7vh solid #A6FBAE;
+}
+
+#logo {
+  max-width: 16vh;
+  height: auto;
+  margin-left: auto;
+  margin-right: 4vw;
+}
+
+#titulo {
+  position: absolute;
+  left: 2vw;
+  width: 60%;
+  height: 10%;
+  background-color: #1A213E;
+  border: 0.7vh solid #2E3552;
+  border-radius: 15vh;
+  transform: translate(0, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+#titulo h1 {
+  font-size: 6vh;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 0.2vh #A6FBAE;
+  background-clip: text;
+  letter-spacing: 1vh;
+  margin-top: 2vh;
+}
+
+#menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 10vh;
+  right: 0vh;
+  bottom: 0;
+  width: 40vh;
+  background-color: #343A50;
+  border-radius: 2vh;
+  box-shadow: 0 0.3vh 0.6vh rgba(0, 0, 0, 0.2);
+  padding: 1.5vh;
+  z-index: 2;
+}
+
+#menu.active {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  font-size: 2.5vh;
+}
+
+#menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  margin-top: 8vh;
+  align-items: center;
+  margin-right: 2vw;
+}
+
+#menu-list a {
+  text-decoration: none;
+  color: #A6FBAE;
+  font-weight: bold;
+}
+
+#menu-List a:hover {
+  color: #A6FBAE;
+  font-size: 2.9vh;
+}
+
+#menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 4vh;
+  height: 0.5vh;
+  background-color: #fff;
+  margin: 0.5vh 0;
+  margin-right: 3vw;
+  border-radius: 0.5vh;
+}
+
+.formulario {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40vh;
+  width: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(26, 33, 62, 0.3);
+  padding: 5vh;
+  border-radius: 7vh;
+  box-shadow: 1vh 2vh 5vh rgba(0, 0, 0, 0.9);
+}
+
+.formulario h2 {
+  font-size: 4vh;
+  color: #A6FBAE;
+  margin-top: -1vh;
+  margin-bottom: 5vh;
+}
+
+.caixa {
+  width: 90%;
+  height: 5vh;
+  border-radius: 5vh;
+  border: none;
+  padding: 1vh;
+  background-color: #4B5067;
+  color: #ffffff;
+  margin-bottom: 2vh;
+  font-size: 2vh;
+}
+
+::placeholder {
+  color: #9397A5;
+  text-indent: 0.5vw;
+}
+
+#botao {
+  position: fixed;
+  bottom: 9vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3vh;
+  background-color: #7BDC73;
+  color: #ffffff;
+  padding: 3vh 5vh;
+  border: none;
+  border-radius: 11.7vh;
+  cursor: pointer;
+  text-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 2);
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1.5vh 1vh rgba(0, 0, 0, 0.3);
+}
+
+#botao:hover {
+  background-color: #9BE49E;
+}

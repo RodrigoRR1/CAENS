@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("imagens/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+#detalhe {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 115%;
+    background-image: url("imagens/r_resItem/detalhe.png");
+    background-size: cover;
+    z-index: -1;
+}
+
+header {
+    background-color: #343A50;
+    padding: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.7vh solid #A6FBAE;
+}
+
+#logo {
+    max-width: 16vh;
+    height: auto;
+    margin-left: auto;
+    margin-right: 4vw;
+}
+
+#titulo {
+    position: absolute;
+    left: 2vw;
+    width: 60%;
+    height: 10%;
+    background-color: #1A213E;
+    border: 0.7vh solid #2E3552;
+    border-radius: 15vh;
+    transform: translate(0, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+#titulo h1 {
+    font-size: 6vh;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.2vh #A6FBAE;
+    background-clip: text;
+    letter-spacing: 1vh;
+    margin-top: 2vh;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 10vh;
+    right: 0vh;
+    bottom: 0;
+    width: 40vh;
+    background-color: #343A50;
+    border-radius: 2vh;
+    box-shadow: 0 0.3vh 0.6vh rgba(0, 0, 0, 0.2);
+    padding: 1.5vh;
+    z-index: 2;
+}
+
+#menu.active {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+#menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    margin-top: 5vh;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+#menu-list a {
+    text-decoration: none;
+    color: #A6FBAE;
+    font-weight: bold;
+}
+
+#menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 4vh;
+    height: 0.5vh;
+    background-color: #fff;
+    margin: 0.5vh 0;
+    margin-right: 3vw;
+    border-radius: 0.5vh;
+}
+
+.tabela-container {
+    position: absolute;
+    top: 55%;
+    left: 38%;
+    height: 50vh;
+    width: 68vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(26, 33, 62, 0.3);
+    padding: 5vh;
+    border-radius: 7vh;
+    box-shadow: 1vh 2vh 5vh rgba(0, 0, 0, 0.9);
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela th {
+    color: #A6FBAE;
+    padding: 1vh;
+    text-align: left;
+    margin-left: 1vw;
+}
+
+.tabela td {
+    color: white;
+    padding: 1.5vh;
+    text-align: left;
+}
