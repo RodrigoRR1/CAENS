@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar Itens</title>
+        <link rel="stylesheet" href="style-cadastarItem.css">
+    </head>
+
+    <body>
+        <div id="detalhe"></div>
+
+        <header>
+            <img id="logo" src="imagens/logo.png" alt="Logo SGI">
+            <div id="alterarMenu" onclick="alterarMenu()">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+            <nav id="menu">
+                <ul id="listaMenu">
+                    <li><a href="#">Solicitar Item</a></li>
+                    <li><a href="#">Retirar Item</a></li>
+                    <li><a href="#">Devolver Item</a></li>
+                    <li><a href="#">Visualizar Itens</a></li>
+                    <li><a href="#">Cadastrar Professor</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="titulo">
+            <h1>CADASTRO DE ITEM</h1>
+        </div>
+
+
+        <div class="formulario">
+            <h2>INFORMAÇÕES DO CADASTRO DE ITEM</h2>
+            <form method="POST" action="">
+                <input type="text" class="caixa" name="nome-item" placeholder="Nome do Item" required>
+                <br>
+                <br>
+                <input type="number" class="caixa" name="quantidade" placeholder="Quantidade" required min="0">
+                <br>
+                <br>
+                <select class="caixa" name="tipo">
+                    <option value="selecione" disabled selected>Tipo</option>
+                    <option value="consumo">Consumo</option>
+                    <option value="emprestimo">Empréstimo</option>
+                </select>
+                <br>
+                <br>
+            </form>
+        </div>
+
+        <input id="botao" type="submit" value="Cadastrar">
+
+        <script>
+            function alterarMenu() {
+                const menu = document.getElementById("menu");
+                menu.classList.toggle("active");
+            }
+        </script>
+    </body>
+
+</html>
